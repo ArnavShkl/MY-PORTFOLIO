@@ -4,278 +4,6 @@ import { ArrowRight, Mail, Instagram, Linkedin, X, Menu, Briefcase, GraduationCa
 
 const blogs = [
   {
-    id: 'mountin-trail-discovery',
-    title: "🏔️ MountIn — A Trail Discovery App for Modern Explorers",
-    date: "18th Jun 2025",
-    readTime: "4 min read",
-    excerpt: "From Mockups to MVP: A Work-In-Progress Showcase. Today, most trekking or trail-finding apps are either overloaded with features hikers don’t need, or too minimal to inspire confidence.",
-    tags: ["UX", "Case Study", "Product Design"],
-    content: `
-      <h3>🎯 The Problem</h3>
-      <p>Today, most trekking or trail-finding apps are either:</p>
-      <ul>
-        <li>Overloaded with features hikers don’t need, or</li>
-        <li>Too minimal to inspire confidence for solo or group treks</li>
-      </ul>
-      <p>As a mountain enthusiast and someone who values good UX, I saw a gap: What if there was a beautifully simple app to help you discover trails nearby, plan safely, and maybe even communicate with fellow trekkers?</p>
-
-      <h3>👤 Target Persona</h3>
-      <ul>
-        <li><strong>Age:</strong> 18–35</li>
-        <li>Lives in/near urban areas with weekend access to trails</li>
-        <li>Tech-savvy, safety-conscious, but doesn’t want to sift through cluttered apps</li>
-        <li>May or may not trek alone, but values coordination features and quick access to trail data</li>
-      </ul>
-
-      <h3>🧠 Design Philosophy</h3>
-      <p>Before building anything, I sketched out the core user journey:</p>
-      <ul>
-        <li>🧭 Discover curated trails nearby</li>
-        <li>🏁 Start a trek with live progress tracking</li>
-        <li>🔔 Access emergency (SOS) tools easily</li>
-        <li>🧑‍🤝‍🧑 Enable group trek planning (later phase)</li>
-      </ul>
-      <p>I designed the experience first in Figma, focusing on:</p>
-      <ul>
-        <li>Clean visual hierarchy</li>
-        <li>Legible trail info cards</li>
-        <li>Accessibility (big tap areas, readable fonts)</li>
-        <li>Emphasis on a calming, outdoorsy visual tone</li>
-      </ul>
-      <p>Honestly, the Figma prototype is still my favorite version — it communicates the kind of polish I aspire to reach with the live MVP. But design is nothing without execution.</p>
-
-      <h3>🛠️ Rapid Prototyping with Glide</h3>
-      <p>I wanted to go beyond just pretty screens and ship something functional — fast. So I used Glide, to create a basic working MVP of MountIn.</p>
-
-      <h4>What I Built:</h4>
-      <ul>
-        <li>Trail discovery screen with real trail names & distance</li>
-        <li>"Start Trail" button that initiates a pseudo tracking experience</li>
-        <li>Manual location logs and timestamps</li>
-        <li>Simple workable UI components mapped to Figma designs (as closely as possible)</li>
-      </ul>
-
-      <h4>What’s Missing (for now):</h4>
-      <ul>
-        <li>Real-time GPS tracking</li>
-        <li>Dynamic elevation gain, timer, group features</li>
-        <li>Full fidelity animations/interactions from Figma</li>
-      </ul>
-      <p>That said, it’s a solid 0.5 version — good enough for user feedback, testing basic assumptions, and showing my end-to-end thinking.</p>
-
-      <h3>📊 PM Lens</h3>
-      <ul>
-        <li>✅ Prioritized building a usable version over pixel perfection</li>
-        <li>✅ Focused on core utility first (trail discovery & journey initiation)</li>
-        <li>🚧 Cut features like group planning and SOS to avoid premature scaling</li>
-        <li>📬 Plan to collect feedback from early users before expanding</li>
-      </ul>
-
-      <h3>🔄 Retrospective</h3>
-      <p>This project reminded me that:</p>
-      <ul>
-        <li>Design is storytelling, but execution is momentum</li>
-        <li>Users don’t care about how polished your mockup is — they care about what works</li>
-        <li>It’s okay to build ugly if you’re testing assumptions fast</li>
-      </ul>
-
-      <h3>📍 Next Steps</h3>
-      <ul>
-        <li>Collect feedback on MVP from 5–10 target users</li>
-        <li>Explore Glide + Make integrations for GPS/elevation APIs</li>
-        <li>Possibly migrate to FlutterFlow for better sensor integration</li>
-        <li>Add SOS functionality and real-time trail progress</li>
-      </ul>
-    `
-  },
-  {
-    id: 'chopup-leftovers',
-    title: "Designing ChopUp – For Leftovers That Deserve Better",
-    date: "12th Jun 2025",
-    readTime: "3 min read",
-    excerpt: "So recently I was messing around with a fun product idea. What if there was an app that helped you figure out what to cook using just the random leftover ingredients in your fridge?",
-    tags: ["cooking", "food", "recipe", "Product Design"],
-    content: `
-      <p>So recently I was messing around with a fun product idea. What if there was an app that helped you figure out what to cook using just the random leftover ingredients in your fridge?</p>
-      <p>No grocery run. No scrolling endlessly on Pinterest. Just scan what you have and cook something legit.</p>
-      <p>I called it ChopUp. It’s not a real app right now. Just a mockup with multiple experimented ideas and assistance from smart tools I made to explore product thinking and interface design. But I ended up liking how it turned out.</p>
-
-      <h3>🍋 The Core Idea</h3>
-      <p>We’ve all had those nights where you stare blankly into your fridge and see half a lemon, a lonely carrot, two boiled potatoes, and absolutely no clue what to do.</p>
-      <p>The idea behind ChopUp is simple. <strong>Use what you already have.</strong></p>
-      <p>You scan your ingredients or list them manually. The app gives you recipe suggestions based on what’s actually there. You can also set dietary preferences so you’re not seeing meals you can’t or don’t want to eat.</p>
-      <p>That’s it. No fluff. Just a tool that solves a very real, very everyday problem.</p>
-
-      <h3>🔍 What I Designed (and Why)</h3>
-      <p>This part was fun. I tried to keep features tight and relevant. The goal was to make it super usable without bloating the experience. Here’s what I added:</p>
-
-      <h4>1. Ingredient Scanner</h4>
-      <p>Use your phone camera to scan the items in your fridge. Why? Because typing "half-used coriander leaves" is just annoying.</p>
-
-      <h4>2. Manual Ingredient Entry</h4>
-      <p>For when scanning fails or if you’re more of a control freak (guilty). Quick and clean.</p>
-
-      <h4>3. Smart Recipe Suggestions</h4>
-      <p>Only shows recipes based on what you currently have. If you’re short one or two things, it suggests easy substitutes.</p>
-
-      <h4>4. Dietary Preferences</h4>
-      <p>You can set restrictions like vegetarian, nut-free, keto, etc. Makes it feel more tailored and inclusive.</p>
-
-      <h4>5. Leftover Reminders</h4>
-      <p>Turn this on to get a gentle nudge before ingredients expire. Small feature, big impact on reducing waste.</p>
-
-      <h4>6. Smartwatch Sync</h4>
-      <p>You can push recipes to your watch. This makes it easier to cook without constantly unlocking your phone with floury fingers.</p>
-
-      <h4>7. Saved Recipes and Shopping Lists</h4>
-      <p>Because not every meal will be a spontaneous fridge dive. There’s room for planning too.</p>
-
-      <h3>🎨 Design Style</h3>
-      <p>The UI is super minimal. I wanted it to feel calm and clean. Clear icons, soft tones, and simple navigation tabs for Home, Recipes, Saved, and Profile. You shouldn’t have to think too much while using it. Especially not when you’re hungry.</p>
-
-      <h3>👀 Why I Made This</h3>
-      <p>I’ve been getting more hands-on with product design lately and I wanted to go beyond just sketching an idea. This was my attempt to think like a PM and designer at once.</p>
-      <p>Some questions I tried to answer:</p>
-      <ul>
-        <li>How do I remove friction for users?</li>
-        <li>How can the app be helpful but not annoying?</li>
-        <li>What edge cases need thinking through, like having too few ingredients or fuzzy camera scans?</li>
-      </ul>
-      <p>It’s not a complicated app, but the idea is grounded in real, messy, daily behavior. That’s what made it fun to work on.</p>
-
-      <h3>🎯 Just a Concept, Not a Launch</h3>
-      <p>This isn’t a serious startup or anything. It’s just a side idea I played with because I think building something, even for fun, teaches you more than just talking about it.</p>
-      <p>Still, if it got you thinking about how you’d use something like this, or you’ve got ideas to add, I’d love to hear.</p>
-      <p>Thanks for reading. And if your fridge looks chaotic right now, maybe this is your sign to do something about it!</p>
-    `
-  },
-  {
-    id: 'apple-q4-dashboard',
-    title: "Reimagining Apple’s Q4 2024 Financials as a Modern Product Dashboard",
-    date: "8th Jun 2025",
-    readTime: "4 min read",
-    excerpt: "Apple’s Q4 2024 results were packed with signals. Services surged. iPhone demand stayed strong. China showed signs of recovery. But reading through a dense 10-K or earnings PDF? Not the most intuitive experience.",
-    tags: ["Dashboard", "Finance", "Apple"],
-    content: `
-      <p>Apple’s Q4 2024 results were packed with signals. Services surged. iPhone demand stayed strong. China showed signs of recovery. But reading through a dense 10-K or earnings PDF? Not the most intuitive experience.</p>
-      <p>So I decided to rethink how we see financials. I designed a sleek, widescreen dashboard that tells Apple’s Q4 story the way a product team might — with clarity, structure, and focus.</p>
-
-      <h3>Why I Did It: Product Thinking Meets Financial Data</h3>
-      <p>Financial reports are informative, but they’re not always usable. Product managers deal with data constantly, but we need it fast, visual, and actionable.</p>
-      <p>So I asked myself:</p>
-      <ul>
-        <li>What would I want to see if I were a PM at Apple?</li>
-        <li>How can design reveal business signals clearly?</li>
-        <li>What’s the simplest way to turn earnings into insights?</li>
-      </ul>
-      <p>This dashboard became an exercise in business clarity — prototyped through design.</p>
-
-      <h3>The Design Approach: Clean, Confident, and Apple-Inspired</h3>
-      <p>I built the dashboard in Figma, designed for landscape desktop viewing. Think Studio Display or MacBook Pro screen — wide, open, and sharp.</p>
-      <p><strong>Visual Style:</strong> Minimal spacing, monochrome palette with soft gradients, SF Pro typeface, and generous white space.</p>
-      <p><strong>Layout System:</strong> Modular cards for revenue, YoY changes, segment breakdowns, and key regions. Each one designed to be clean and skimmable.</p>
-      <p><strong>Interactivity (Conceptual):</strong> Toggle views by region, product, and quarter. Smooth motion and hover states give it a light, responsive feel.</p>
-
-      <h3>What the Data Reveals</h3>
-      <blockquote>"Good design doesn’t just show everything. It helps you see what matters."</blockquote>
-      <p>Here are some of the key takeaways surfaced through the dashboard:</p>
-      <ul>
-        <li>Services revenue hit $24.1B, now close to 27 percent of Apple’s total revenue. That’s a structural shift.</li>
-        <li>iPhone grew 7.2 percent year-over-year with only 10 days of iPhone 16 sales in the quarter.</li>
-        <li>China rebounded 5.7 percent after three weak quarters.</li>
-        <li>iPad declined 3.1 percent year-over-year, falling behind other categories.</li>
-      </ul>
-      <p>Each stat tells a story. For a PM, this could guide prioritization, focus areas, and roadmap conversations.</p>
-
-      <h3>Product Thinking Behind the Scenes</h3>
-      <p>This wasn’t just a design project. It was a product-thinking challenge:</p>
-      <ul>
-        <li><strong>Clarity first:</strong> Cut the noise and highlight movement.</li>
-        <li><strong>Reusable components:</strong> Cards built like features — consistent and efficient.</li>
-        <li><strong>Narrative-driven:</strong> Present data like a story, not a spreadsheet.</li>
-        <li><strong>Quick takeaways:</strong> Reduce time to insight for decision-makers.</li>
-      </ul>
-      <p>It’s the same mindset we use when building products — applied to business data.</p>
-
-      <h3>Tools Used: AI + Intuition</h3>
-      <p>I used AI along the way to structure the data and sharpen the storytelling. It wasn’t about replacing design sense — it was about moving faster.</p>
-      <p>AI helped generate clean layouts, surface key insights, and make the process more fluid. But every design decision was made with intention and product context.</p>
-
-      <h3>Final Thoughts</h3>
-      <p>Apple has always focused on experience. This dashboard was my way of imagining how financial results could feel more like an experience than a report.</p>
-      <p>Design, data, and product thinking all came together here — with a bit of AI to accelerate the process.</p>
-      <p>If you’re into dashboards, product strategy, or turning complexity into clarity, let’s connect.</p>
-    `
-  },
-  {
-    id: 'ai-security-dashboard',
-    title: "I Got Tired of Manual Dashboards — So I Let AI do the Dirty Work",
-    date: "2nd Jun 2025",
-    readTime: "3 min read",
-    excerpt: "What if I told you that I built something in a day that security teams usually spend entire weeks sweating over? No more late nights formatting bar charts in Excel.",
-    tags: ["AI", "Automation", "Dashboard"],
-    content: `
-      <p>What if I told you that I built something in a day that security teams usually spend entire weeks sweating over? No more late nights formatting bar charts in Excel or praying Power BI doesn’t crash mid-presentation. This is a dashboard that actually works for you.</p>
-
-      <h3>The Problem: Death by Dashboard</h3>
-      <p>Let’s face it — security reporting has become a grind. Endless log files, vulnerability reports, and compliance checks. And somehow, every insight has to be handcrafted in a spreadsheet that looks like a rejected art project.</p>
-      <p>You know the drill:</p>
-      <ul>
-        <li>Dozens of CSVs stitched together</li>
-        <li>Complex filters that break every time someone sneezes</li>
-        <li>Power BI visuals that load slower than a Monday morning</li>
-      </ul>
-      <p>Enough of that. Seriously.</p>
-
-      <h3>The Fix: Let the Machines Do the Dirty Work</h3>
-      <p>So I asked, why are we still doing this manually when we’ve got AI?</p>
-      <p>That’s when I built a dashboard that cuts through the noise. It pulls in the mess, makes sense of it, and serves it up clean and ready for action. One screen. Real insight. No manual labor.</p>
-      <p>And while you’re seeing static screenshots here, don’t be mistaken — the real dashboard is interactive, filterable, and fully functional. We’re not playing with image generators here. This thing actually runs.</p>
-
-      <h3>What This Dashboard Delivers</h3>
-      
-      <h4>Top 5 Critical Findings</h4>
-      <p>No more hunting. Just the biggest fires, automatically ranked and ready to tackle.</p>
-
-      <h4>Assets with Most Issues</h4>
-      <p>Know where the mess is piling up. The AI doesn’t miss. It spotted the troublemakers before I even had coffee.</p>
-
-      <h4>Quick Wins</h4>
-      <p>Security teams love fast wins. These are surfaced instantly so you can stop wasting time on low-impact fixes.</p>
-
-      <h4>Findings by Age</h4>
-      <p>Visualizing tech debt has never been this painless. No pivots, no VLOOKUPs, just a clear view.</p>
-
-      <h4>Severity Heatmap</h4>
-      <p>Get a true risk snapshot by asset type. Now you know if your printers are secretly plotting your downfall.</p>
-
-      <h3>How It Works (Without the Tech Headache)</h3>
-      <p>No custom models, no complex backend engineering. I just knew how to speak fluent AI.</p>
-      <p>By combining a sharp product sense with precise prompting, I was able to guide advanced AI tools to generate a fully functional security dashboard layout — complete with filters, live insights, and a clean, enterprise-ready UI.</p>
-      <p>I mapped out exactly what security teams need:</p>
-      <ul>
-        <li>Actionable data, not just visual clutter</li>
-        <li>Prioritized findings based on real risk</li>
-        <li>Clear ownership and remediation timelines</li>
-        <li>A layout that makes sense at a glance</li>
-      </ul>
-      <p>With that vision in place, the AI helped translate it into a working dashboard that feels like a true command center — not another noisy spreadsheet in disguise.</p>
-      <p>No design or development team. No weeks of wireframing. Just the right prompts and the right tools.</p>
-
-      <h3>Why This Matters</h3>
-      <ul>
-        <li>Saves you six hours a week (minimum)</li>
-        <li>Frees up security teams to actually fix problems instead of building reports</li>
-        <li>Gives leadership the clarity they crave without the fluff</li>
-        <li>And best of all, it doesn’t involve PowerPoint animations or Excel formulas gone rogue</li>
-      </ul>
-
-      <h3>Final Thoughts</h3>
-      <p>This dashboard isn’t just a project. It’s a statement. We’re done wasting time where machines can handle the load. This is what happens when you combine AI with real product thinking.</p>
-      <p>And yes, I’m proudly retiring from the spreadsheet grind.</p>
-    `
-  },
-  {
     id: 'feelix-mood-productivity',
     title: "Designing Feelix: A Mood-Based Productivity Companion",
     date: "27th May 2025",
@@ -425,6 +153,29 @@ const blogs = [
       <p>This blog, ProdFolio, will be a place where I explore ideas, analyze products, share my learnings, and showcase design and strategy experiments. It’s raw, real, and evolving, just like me.</p>
       <p>If you’re someone who’s also curious about product management or just beginning your journey, stick around. Let’s learn, build, and grow!</p>
     `
+  }
+];
+
+const projects = [
+  {
+    id: 'ashwani-portfolio',
+    title: "Ashwani Kumar's Executive Portfolio",
+    date: "2026",
+    readTime: "Web App",
+    excerpt: "Built an executive interactive portfolio for SBI Life's Executive Vice President and Regional Director Mr. Ashwani Kumar Shukla, showcasing his robust industry experience and skills through an interactive site which drives 20% more engagement.",
+    tags: ["Web Design", "Product design", "AI", "Prompt Engineering", "UX design"],
+    link: "https://ashwanikumarshukla.netlify.app/",
+    type: "app"
+  },
+  {
+    id: 'danone-mind-gut',
+    title: "Danone Mind+Gut Application",
+    date: "2026",
+    readTime: "Web App",
+    excerpt: "Developed a full-stack Progressive Web App (PWA) for Danone's MIND+GUT™ personalized nutrition platform, implementing dynamic scoring algorithms, real-time data visualization with Recharts, multi-country localization (50+ regions), and scalable architecture supporting 30K+ concurrent users with seamless cross-platform compatibility.",
+    tags: ["Web Development", "Full Stack", "Product design", "Mobile App Development", "AI", "Prompt Engineering"],
+    link: "https://mindgutdanone.netlify.app/",
+    type: "app"
   }
 ];
 
@@ -744,8 +495,9 @@ const SkillsTab = () => {
     { name: "Google Analytics", level: 75, category: "Technical" },
     { name: "Jira", level: 80, category: "Management" },
     { name: "Trello", level: 85, category: "Management" },
-    { name: "WordPress", level: 70, category: "Technical" },
+    { name: "AI Powered Developer", level: 95, category: "Technical" },
     { name: "Canva", level: 95, category: "Design" },
+    { name: "Communication", level: 100, category: "Soft Skill" },
   ];
 
   return (
@@ -781,6 +533,8 @@ const SkillsTab = () => {
 
 const AchievementsTab = () => {
   const achievements = [
+    { title: "TAPMI Achiever's Club", org: "T A Pai Management Institute, Manipal", year: "2026", type: "Award" },
+    { title: "National Winner – Breaking Case 9.0", org: "Indian Institute of Management, Tiruchirappalli", year: "2026", type: "Award" },
     { title: "National Winner – AI-Fluence", org: "Sri Ram College of Commerce, Delhi", year: "2025", type: "Award" },
     { title: "Runner Up – Pitch Perfect", org: "Indian Institute of Management, Raipur", year: "2025", type: "Award" },
     { title: "Second Runner Up: NEXUS 2024", org: "Goa Institute of Management, Goa", year: "2024", type: "Award" },
@@ -833,7 +587,7 @@ const Resume = () => {
           transition={{ duration: 0.8 }}
           className="mb-16 text-center"
         >
-          <h2 className="font-display text-5xl md:text-7xl font-bold mb-6">interactive <span className="text-[var(--color-accent)] italic">resume</span></h2>
+          <h2 className="font-display text-5xl md:text-7xl font-bold mb-6">Interactive <span className="text-[var(--color-accent)] italic">Resume</span></h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             A quick glance at my professional journey, educational background, and the skills I bring to the table.
           </p>
@@ -874,6 +628,11 @@ const Work = () => {
     window.location.hash = `#blog/${id}`;
   };
 
+  const allWorks = [
+    ...projects,
+    ...blogs.map(b => ({ ...b, type: 'blog', link: '' }))
+  ];
+
   return (
     <section id="work" className="py-32 px-6">
       <div className="max-w-7xl mx-auto">
@@ -884,45 +643,51 @@ const Work = () => {
           transition={{ duration: 0.8 }}
           className="mb-20"
         >
-          <h2 className="font-display text-5xl md:text-7xl font-bold mb-6">my work</h2>
+          <h2 className="font-display text-5xl md:text-7xl font-bold mb-6">My Work</h2>
           <p className="text-xl text-gray-400 max-w-2xl">
             Here's a sample of my thoughts, case studies, and projects. I'll let you in on a secret... I have a lot more cool stuff in the works!
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogs.map((blog, idx) => (
+          {allWorks.map((work, idx) => (
             <motion.div
-              key={blog.id}
+              key={work.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               className="group relative bg-[#1A1A1A] rounded-3xl p-8 hover:bg-[#222] transition-colors cursor-pointer border border-white/5 hover:border-[var(--color-accent)]/50 flex flex-col h-full hover:-translate-y-2 duration-300 shadow-lg hover:shadow-[0_10px_30px_rgba(255,60,0,0.1)]"
-              onClick={() => handleBlogClick(blog.id)}
+              onClick={() => {
+                if (work.type === 'app') {
+                  window.open(work.link, '_blank', 'noopener,noreferrer');
+                } else {
+                  handleBlogClick(work.id);
+                }
+              }}
             >
               <div className="mb-6 flex-grow">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {blog.tags.map(tag => (
+                  {work.tags.map(tag => (
                     <span key={tag} className="text-xs font-medium px-3 py-1 rounded-full bg-white/10 text-gray-300">
                       {tag}
                     </span>
                   ))}
                 </div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-[var(--color-accent)] transition-colors line-clamp-3">
-                  {blog.title}
+                  {work.title}
                 </h3>
                 <p className="text-gray-400 line-clamp-3 text-sm">
-                  {blog.excerpt}
+                  {work.excerpt}
                 </p>
               </div>
               <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/10">
                 <div className="flex flex-col">
-                  <span className="text-sm text-gray-500">{blog.date}</span>
-                  <span className="text-xs text-[var(--color-accent)] mt-1">{blog.readTime}</span>
+                  <span className="text-sm text-gray-500">{work.date}</span>
+                  <span className="text-xs text-[var(--color-accent)] mt-1">{work.readTime}</span>
                 </div>
                 <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[var(--color-accent)] group-hover:text-black transition-colors">
-                  <ArrowRight size={18} />
+                  <ArrowRight size={18} className={work.type === 'app' ? '-rotate-45' : ''} />
                 </div>
               </div>
             </motion.div>
@@ -1065,27 +830,27 @@ const WhyMe = () => {
   const reasons = [
     {
       num: "01",
-      title: "product thinking",
+      title: "Product Thinking",
       desc: "Breaking down real-world ideas and user needs. I focus on the 'why' before the 'what', ensuring every feature solves a genuine problem."
     },
     {
       num: "02",
-      title: "hands-on design",
+      title: "Hands-On Design",
       desc: "Creating wireframes and prototypes in Figma. I believe in visualizing ideas early to validate concepts and align stakeholders."
     },
     {
       num: "03",
-      title: "problem solver",
+      title: "Problem Solver",
       desc: "I love nothing more than a problem. I need problems to solve to get out of bed in the morning... the process of achieving it is what drives me."
     },
     {
       num: "04",
-      title: "continuous learner",
+      title: "Continuous Learner",
       desc: "Documenting my journey, reflections, and experiments. I'm always exploring new tools, frameworks, and methodologies to improve my craft."
     },
     {
       num: "05",
-      title: "nice human-being",
+      title: "Nice Human-Being",
       desc: "I do my best to be a positive, kind and accommodating human! I'm a keen communicator, love working with others and helping teams succeed."
     }
   ];
@@ -1100,7 +865,7 @@ const WhyMe = () => {
           transition={{ duration: 0.8 }}
           className="mb-20"
         >
-          <h2 className="font-display text-5xl md:text-7xl font-bold">why work with me?</h2>
+          <h2 className="font-display text-5xl md:text-7xl font-bold">Why Work With Me?</h2>
         </motion.div>
 
         <div className="space-y-16">
