@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --color-bg: #100F0F;
+  --color-accent: #FF3C00;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Blog Content Styles */
+.blog-hero-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.blog-content img:hover {
+  transform: scale(1.02);
+}
+
+.blog-content img.image-failed {
+  opacity: 0.5;
+  filter: grayscale(100%);
+  cursor: default;
+}
+
+.blog-content figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.blog-content figcaption {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .blog-hero-image {
+    max-height: 300px;
+  }
+}
+
+.blog-content h3 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  color: #ffffff;
+}
+
+.blog-content h4 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+.blog-content ul, .blog-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+.blog-content ul {
+  list-style-type: disc;
+}
+
+.blog-content ul li::marker {
+  color: var(--color-accent);
+}
+
+.blog-content ol {
+  list-style-type: decimal;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid var(--color-accent);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #e5e7eb;
+}
+
+.blog-content a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
